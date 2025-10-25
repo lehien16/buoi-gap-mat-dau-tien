@@ -1267,12 +1267,12 @@
                         nextTutorialStep();
                         return;
                     }
-                }
-                else if (currentSlide === 2) {
+            
                     resetGame();
                     goToSlide(3);
+                    return;
                 }
-
+            
                 if (currentSlide < totalSlides) {
                     goToSlide(currentSlide + 1);
                 }
