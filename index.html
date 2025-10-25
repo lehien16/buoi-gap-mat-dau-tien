@@ -1268,8 +1268,12 @@
                         return;
                     }
                 }
-                else if (currentSlide < totalSlides) {
+                else if (currentSlide === 2) {
                     resetGame();
+                    goToSlide(3);
+                }
+
+                if (currentSlide < totalSlides) {
                     goToSlide(currentSlide + 1);
                 }
             }
